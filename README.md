@@ -1,4 +1,5 @@
-# easy-volume
+# easy-volume-next
+> fork easy-volume，Modify volume.exe to be compatible with win7, win10, and win11, and determine whether to use ia32 or x64 based on arch
 [![npm](https://img.shields.io/npm/dt/easy-volume.svg)](https://www.npmjs.com/package/easy-volume?activeTab=readme)
 
 Controlling system volume level in Node.js **has never been easier**!
@@ -39,12 +40,12 @@ console.log(isMuted); // true
 ```getMute(): Promise<boolean>```
 * Get current mute status (whether the system audio is muted or not)
 * **Returns**: Whether the system audio is muted, i.e. true == muted, false == unmuted
- 
+
 
 ```setMute(isMuted: boolean) => Promise<void>```
 * Either mute or unmute system audio
 * **Param** *isMuted*: Whether to mute or unmute the system audio
-   
+
 ```toggleMute() => Promise<void>```
 * Toggle mute state
 * **Returns**: Current (new) mute state (true == muted, false == unmuted)
