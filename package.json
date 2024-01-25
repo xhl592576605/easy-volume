@@ -4,7 +4,7 @@
 		"type": "git",
 		"url": "https://github.com/xhl592576605/easy-volume"
 	},
-	"version": "1.2.0",
+	"version": "1.2.1",
 	"description": "fork easy-volume The easiest way to get and control your system's volume is finally here",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",

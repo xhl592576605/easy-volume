@@ -3,7 +3,7 @@ import { ExecException, exec } from "child_process";
 export const execCommand = (cmd: string, args: string[]): Promise<string> =>
   new Promise((resolve, reject) => {
     exec(
-      `${cmd} ${args.join(" ")}`,
+      `"${cmd}" ${args.join(" ")}`,
       (err: ExecException, stdout: string, stderr: string) => {
         if (err || stderr) {
           reject(stderr);
